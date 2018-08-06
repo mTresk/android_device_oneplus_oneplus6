@@ -207,7 +207,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OnePlusCamera \
     OnePlusCameraService \
-    OnePlusGallery
+    OnePlusGallery \
+    seccamservice
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/ooscam/lib64/libcvface_api.so:system/lib64/libcvface_api.so \
