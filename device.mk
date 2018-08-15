@@ -203,9 +203,22 @@ PRODUCT_PACKAGES += \
     libcld80211 \
     lib_driver_cmd_qcwcn
 
-# Camera
+# OOS Camera
 PRODUCT_PACKAGES += \
-    SnapdragonCamera2
+    OnePlusCamera \
+    OnePlusCameraService \
+    OnePlusGallery
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/ooscam/lib64/libcvface_api.so:system/lib64/libcvface_api.so \
+    $(LOCAL_PATH)/prebuilt/ooscam/lib64/libjni_cvface_api.so:system/lib64/libjni_cvface_api.so \
+    $(LOCAL_PATH)/prebuilt/ooscam/lib64/libjnistblur_capture_api.so:system/lib64/libjnistblur_capture_api.so \
+    $(LOCAL_PATH)/prebuilt/ooscam/lib64/libjnistblur_preview_api.so:system/lib64/libjnistblur_preview_api.so \
+    $(LOCAL_PATH)/prebuilt/ooscam/lib64/libopbaselib.so:system/lib64/libopbaselib.so \
+    $(LOCAL_PATH)/prebuilt/ooscam/lib64/libopcamera.so:system/lib64/libopcamera.so \
+    $(LOCAL_PATH)/prebuilt/ooscam/lib64/libopcameralib.so:system/lib64/libopcameralib.so \
+    $(LOCAL_PATH)/prebuilt/ooscam/lib64/libstblur_capture_api.so:system/lib64/libstblur_capture_api.so \
+    $(LOCAL_PATH)/prebuilt/ooscam/lib64/libstblur_preview_api.so:system/lib64/libstblur_preview_api.so 
 
 # power
 PRODUCT_PACKAGES += \
