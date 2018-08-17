@@ -1,3 +1,4 @@
+import /init.kerneltune.rc
 on init
     #stop power-hal-1-0
 

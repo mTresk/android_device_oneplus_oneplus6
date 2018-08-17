@@ -1,0 +1,67 @@
+on late-fs
+# boot time fs tune
+   write /sys/block/sda/queue/iostats 0
+   write /sys/block/sda/queue/scheduler cfq
+   write /sys/block/sda/queue/iosched/slice_idle 0
+   write /sys/block/sda/queue/read_ahead_kb 1024
+   write /sys/block/sda/queue/nr_requests 256
+   write /sys/block/sde/queue/iostats 0
+   write /sys/block/sde/queue/scheduler cfq
+   write /sys/block/sde/queue/iosched/slice_idle 0
+   write /sys/block/sde/queue/read_ahead_kb 1024
+   write /sys/block/sde/queue/nr_requests 256 
+
+on property:sys.boot_completed=1
+   chown system system /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
+   chown system system /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq
+   chown system system /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+   chown system system /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
+   chown system system /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
+   chown system system /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
+   chown system system /sys/module/workqueue/paramaters/power_efficient
+   chmod 0664 /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
+   chmod 0664 /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq
+   chmod 0664 /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+   chmod 0664 /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
+   chmod 0664 /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
+   chmod 0664 /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
+   chmod 0664 /sys/module/workqueue/paramaters/power_efficient
+   chmod system system /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
+   chmod system system /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
+   chmod system system /sys/class/kgsl/kgsl-3d0/devfreq/governor
+   chmod 0664 /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
+   chmod 0664 /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
+   chmod 0664 /sys/class/kgsl/kgsl-3d0/devfreq/governor
+
+on property:sys.post_boot.parsed=1
+   write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us 500
+   write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us 20000
+   write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/iowait_boost_enable 0
+   write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us 500
+   write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us 20000
+   write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/iowait_boost_enable 0
+
+# Enable input boost configuration
+   write /dev/stune/top-app/schedtune.boost 0
+   write /dev/stune/top-app/schedtune.prefer_idle 1
+   write /dev/stune/top-app/schedtune.sched_boost 15
+   write /dev/stune/background/schedtune.boost 0
+   write /dev/stune/background/schedtune.prefer_idle 0
+   write /dev/stune/foreground/schedtune.boost 1
+   write /dev/stune/foreground/schedtune.prefer_idle 1
+   write /dev/stune/schedtune.prefer_idle 0
+   write /proc/sys/kernel/sched_child_runs_first 0
+   write /proc/sys/kernel/sched_boost 0
+   write /dev/cpuset/background/cpus 0-3
+   write /dev/cpuset/system-background/cpus 0-3
+   write /sys/devices/system/cpu/online 0-7
+   write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1766400
+   write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 576000
+   write /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq 2803200
+   write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 825600
+   write /sys/module/cpu_input_boost/parameters/dynamic_stune_boost 15
+   write /sys/module/cpu_input_boost/parameters/input_boost_duration 125
+   write /sys/module/cpu_input_boost/parameters/input_boost_freq_hp 1363200
+   write /sys/module/cpu_input_boost/parameters/input_boost_freq_lp 1516800
+   write /sys/module/workqueue/paramaters/power_efficient N
+   write  /proc/sys/kernel/sched_initial_task_util 0
