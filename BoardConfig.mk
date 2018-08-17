@@ -86,7 +86,7 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_APPEND_DTB := true
 TARGET_KERNEL_SOURCE := kernel/oneplus/sdm845
-TARGET_KERNEL_CONFIG := treskmod_defconfig
+TARGET_KERNEL_CONFIG := redflare_defconfig
 
 # partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
