@@ -68,8 +68,7 @@
   <string name="category_fp_up_swipe_gesture">Отпечаток пальца вверх</string>
   <string name="category_fp_right_swipe_gesture">Отпечаток пальца вправо</string>
   <string name="category_fp_left_swipe_gesture">Отпечаток пальца влево</string>
-  <string name="fp_swipe_down_switch_summary_head">Уведомление по умолчанию при свайпе вниз по сканеру отпечатков пальцев</string>
-  <string name="fp_swipe_down_switch_title_head">Свайп вниз по сканеру отпечатков пальцев</string>
+  <string name="fp_swipe_down_switch_title_head">Долгое нажатие на сканнер отпечатка</string>
   <string name="doze_category_title">Активный экран</string>
   <string name="doze_category_summary">Включение экрана при получении уведомлений</string>
   <string name="wave_check_summary">Пульсирующие уведомления при проведении рукой над телефоном</string>
@@ -85,4 +84,10 @@
   <string name="tile_panel_mode">Режимы панели</string>
   <string name="tile_hbm_mode">Режимы повышенной яркости</string>
   <string name="wake_entry">Пробуждение</string>
+  <string name="otg_switch_summary">Включить/выключить поддержку USB-OTG</string>
+  <string name="otg_switch_title">Поддержка USB-OTG</string>
+  <string name="category_fp_long_press_gesture">Длительное нажатие на сканнер отпечатка пальца</string>
+  <string name="fp_swipe_down_switch_summary_head">Используйте долгий жест нажатия, чтобы развернуть уведомления</string>
+  <string name="off_screen_gesture_feedback_summary_head">Включить тактическую обратную связь для жестов</string>
+  <string name="off_screen_gesture_feedback_title_head">Тактическая обратная связь</string>
 </resources>
