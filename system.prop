@@ -308,6 +308,9 @@ ro.services.whitelist.packagelist=com.google.android.gms
 
 persist.sys.camera.preview.size=1920x1080
 
+# Touch
+persist.vendor.qti.inputopts.enable=true
+
 persist.radio.aosp_usr_pref_sel=true
 persist.vendor.radio.add_power_save=true
 persist.rcs.supported=true
