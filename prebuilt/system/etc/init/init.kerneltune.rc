@@ -60,7 +60,7 @@ on property:sys.post_boot.parsed=1
    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq 2803200
    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 825600
    write /sys/module/cpu_input_boost/parameters/dynamic_stune_boost 50
-   write /sys/module/cpu_input_boost/parameters/input_boost_duration 1400
+   write /sys/module/cpu_input_boost/parameters/input_boost_duration 150
    write /sys/module/cpu_input_boost/parameters/input_boost_freq_hp 1363200
    write /sys/module/cpu_input_boost/parameters/input_boost_freq_lp 1516800
    write /sys/module/workqueue/paramaters/power_efficient N
