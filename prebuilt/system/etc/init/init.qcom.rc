@@ -157,7 +157,11 @@ on post-fs
     #chown system system /sys/class/timed_output/vibrator/vtg_level
     #chown system system /sys/class/timed_output/vibrator/vtg_max
     #chown system system /sys/class/timed_output/vibrator/vtg_min
+    chown system system /sys/class/leds/vibrator/vmax_override
+    write /sys/class/leds/vibrator/vmax_override 1
     chown system system /sys/class/leds/vibrator/vmax_mv_user
+    chown system system /sys/class/leds/vibrator/vmax_mv_call
+    chown system system /sys/class/leds/vibrator/vmax_mv_strong
 
 
 service dashd /sbin/dashd
