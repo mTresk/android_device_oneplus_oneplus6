@@ -53,5 +53,11 @@
     "repository": "android_packages_apps_GoogleCameraModOP6",
     "target_path": "packages/apps/GoogleCameraModOP6",
     "revision": "android-9.0"
+  },
+  {
+    "remote": "github",
+    "repository": "DonkeyCoyote/android_vendor_qcom_sdclang",
+    "target_path": "vendor/qcom/sdclang",
+    "revision": "android-9.0"
   }
 ]
