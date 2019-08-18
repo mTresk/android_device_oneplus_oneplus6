@@ -34,6 +34,8 @@
   <string name="graphics_title">Оформление</string>
   <string name="srgb_mode_title">Режим sRGB</string>
   <string name="hbm_mode_title">Режим повышенной яркости</string>
+  <string name="dcd_mode_title">DC затемнение</string>
+  <string name="dcd_mode_summary">Уменьшить мерцание экрана при низкой яркости</string>
   <string name="adaptive_mode_title">Адаптивный режим</string>
   <string name="oneplus_mode_title">Режим OnePlus</string>
   <string name="proxi_summary_head">Проверить датчики жестов и отпечатков пальцев</string>
