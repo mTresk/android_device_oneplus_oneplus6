@@ -43,6 +43,11 @@
          -->
     <string name="config_mainBuiltInDisplayCutout">M 0,0 L -150, 0 A 24.0, 24.0, 0, 0, 1, -150.0, 22.0 A 64.0, 64.0, 0, 0, 0, -95.0, 80.0 L 95.0, 80.0 A 64.0, 64.0, 0, 0, 0, 150.0, 22.0 A 24.0, 24.0, 0, 0, 1, 150.0, 0 Z</string>
 
+    <!-- Radius of the software rounded corners at the top and bottom of the display in its
+        natural orientation. If zero, the value of rounded_corner_radius is used. -->
+    <dimen name="rounded_corner_radius_top">84.0px</dimen>
+    <dimen name="rounded_corner_radius_bottom">68.0px</dimen>
+
     <!-- Default color for notification LED is blue. -->
     <color name="config_defaultNotificationColor">#ff0000ff</color>
 
