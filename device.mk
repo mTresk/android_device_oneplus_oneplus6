@@ -21,6 +21,13 @@
 #
 $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
 
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1080
+IS_PHONE := true
+TARGET_MINIMAL_APPS := false
+TARGET_INCLUDE_STOCK_ARCORE := true
+
 #Apex
 #PRODUCT_PROPERTY_OVERRIDES := ro.apex.updatable=true
 PRODUCT_PACKAGES := com.android.apex.cts.shim.v1_prebuilt

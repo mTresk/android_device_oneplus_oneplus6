@@ -47,4 +47,7 @@
     -->
     <string name="doze_pickup_subtype_performs_proximity_check">!8,33171025,33171026,33171028</string>
 
+    <!-- Allow devices override audio panel location to the left side -->
+    <bool name="config_audioPanelOnLeftSide">true</bool>
+
 </resources>
