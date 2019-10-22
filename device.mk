@@ -33,6 +33,7 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 PRODUCT_PACKAGES := com.android.apex.cts.shim.v1_prebuilt
 TARGET_FLATTEN_APEX := false
 
+
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.version.all_codenames=$(PLATFORM_VERSION_ALL_CODENAMES) \
     ro.build.version.codename=$(PLATFORM_VERSION_CODENAME) \
@@ -56,11 +57,6 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_engine_sideload \
     update_verifier
-
-# Boot control
-PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl.recovery \
-    bootctrl.sdm845.recovery
 
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
@@ -162,6 +158,16 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libtinyalsa
+
+#Nfc
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.0 \
+    android.hardware.nfc@1.1 \
+    android.hardware.nfc@1.2
+
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
 
 PRODUCT_EXTRA_VNDK_VERSIONS := 28
 
