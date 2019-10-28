@@ -1,5 +1,2 @@
-subdirs = [
-    "health",
-    "bootctrl",
-    "gpt-utils",
-]
+soong_namespace {
+}
