@@ -6,10 +6,10 @@
     "revision": "android-10"
   },
   {
-    "remote": "omnirom",
-    "repository": "android_kernel_oneplus_sdm845",
+    "remote": "mtresk",
+    "repository": "kernel_oneplus_sdm845",
     "target_path": "kernel/oneplus/sdm845",
-    "revision": "android-10"
+    "revision": "ten"
   },
   {
     "remote": "omnirom",
