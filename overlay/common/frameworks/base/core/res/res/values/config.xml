@@ -733,4 +733,7 @@
         <item>2</item>
         <item>3</item>
     </integer-array>
+
+    <!-- Whether device has physical tri state switch -->
+    <bool name="config_hasAlertSlider">true</bool>
 </resources>
