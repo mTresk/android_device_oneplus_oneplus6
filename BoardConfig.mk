@@ -264,5 +264,9 @@ BOARD_SECCOMP_POLICY += $(BOARD_PATH)/seccomp_policy
 
 # for offmode charging
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
-TARGET_RECOVERY_FSTAB := $(BOARD_PATH)/recovery.fstab
 
+# recovery
+TARGET_RECOVERY_FSTAB := $(BOARD_PATH)/recovery.fstab
+ifeq ($(TARGET_DEVICE),oneplus6)
+TARGET_PREBUILT_RECOVERY_RAMDISK := $(BOARD_PATH)/ramdisk-recovery.zip
+endif
