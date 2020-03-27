@@ -31,7 +31,7 @@
     <integer name="config_cpuTempDivider" translatable="false">1000</integer>
 
     <!-- The CPUs to display in CPUInfoService view -->
-    <string name="config_displayCpus" translatable="false">0,4</string>
+    <string name="config_displayCpus" translatable="false">0,1,2,3,4,5,6,7</string>
 
     <!-- Doze: a list of pickup sensor subtypes that perform a proximity check before they trigger.
                If not empty, either * or !* must appear to specify the default.
