@@ -30,5 +30,7 @@
     <dimen name="tri_state_up_dialog_position_l">270.375px</dimen>
     <dimen name="tri_state_up_dialog_position_deep">21.0px</dimen>
     <dimen name="tri_state_up_dialog_position_deep_land">21.0px</dimen>
+    <!-- Volume panel -->
+    <dimen name="volume_dialog_panel_transparent_padding_left">4dp</dimen>
 </resources>
 
