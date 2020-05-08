@@ -98,6 +98,10 @@ PRODUCT_CHARACTERISTICS := nosdcard
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.oneplus6
 
+# power
+PRODUCT_PACKAGES += \
+    power.oneplus6
+
 PRODUCT_PACKAGES += \
     android.hardware.light-V2.0-java \
     android.hardware.light@2.0-impl
