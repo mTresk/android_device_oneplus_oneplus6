@@ -22,7 +22,8 @@
 VENDOR_EXCEPTION_PATHS := oneplus \
     omni \
     gapps \
-    pixelstyle
+    pixelstyle \
+    google-customization
 
 # Sample: This is where we'd set a backup provider if we had one
 # $(call inherit-product, device/sample/products/backup_overlay.mk)
